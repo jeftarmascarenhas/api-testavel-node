@@ -7,8 +7,9 @@
     "start": "babel-node index.js",
     "test": "test",
     "test-integration": "mocha --opts test/integration/mocha.opts test/integration/*.js",
-    "lint":"eslint **/*.js",
-    "lint:fix":"eslint **/*.js --fix"
+    "test-unit":"mocha --opts test/unit/mocha.opts test/unit/**/*.js",
+    "lint": "eslint **/*.js",
+    "lint:fix": "eslint **/*.js --fix"
   },
   "keywords": [
     "test",
@@ -29,7 +30,8 @@
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "^7.0.1",
     "mocha": "^3.3.0",
-    "supertest": "^3.0.0"
+    "supertest": "^3.0.0",
+    "testdouble": "^3.0.0"
   },
   "dependencies": {
     "body-parser": "^1.17.2",
